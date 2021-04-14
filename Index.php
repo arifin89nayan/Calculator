@@ -49,6 +49,7 @@ if(isset($_POST['operator'])){
    <div class="form-group">
         <label>Operators </label> 
         <select name="operator">
+        <option>Select Operation </option>
         <?php if(isset($_POST['operator'])) { ?>
             <option <?php echo ($_POST['operator'] == '+') ? 'selected' : ''; ?> value="+">+</option>
             <option <?php echo ($_POST['operator'] == '-') ? 'selected' : ''; ?>  value="-">-</option>
